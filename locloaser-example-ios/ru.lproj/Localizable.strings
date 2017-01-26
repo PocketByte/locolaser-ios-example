@@ -1,0 +1,8 @@
+/* LocoLaser example */
+"app_name" = "LocoLaser пример";
+
+/* This is example application of how to use the LocoLser. */
+"screen_main_app_description" = "Это пример приложения по использованию LocoLaser.";
+
+/* Plural string examples */
+"screen_main_plural_example_title" = "Примеры Plural строк";
