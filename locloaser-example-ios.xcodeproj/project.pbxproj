@@ -102,6 +102,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B7789F11E3A297700C2FB58 /* Build configuration list for PBXNativeTarget "locloaser-example-ios" */;
 			buildPhases = (
+				8BBB580B1E69D0C6004A3CE9 /* ShellScript */,
 				8B7789DB1E3A297700C2FB58 /* Sources */,
 				8B7789DC1E3A297700C2FB58 /* Frameworks */,
 				8B7789DD1E3A297700C2FB58 /* Resources */,
@@ -168,6 +169,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8BBB580B1E69D0C6004A3CE9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./locloaser-example-ios/localize.command";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8B7789DB1E3A297700C2FB58 /* Sources */ = {
@@ -356,6 +373,7 @@
 				8B7789F31E3A297700C2FB58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

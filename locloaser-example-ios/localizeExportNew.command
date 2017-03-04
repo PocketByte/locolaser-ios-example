@@ -27,4 +27,4 @@ else
     fi
 fi
 
-java -jar $ARTIFACT_FILE $CONFIG_FILE --f
+java -jar $ARTIFACT_FILE $CONFIG_FILE --f —cs export_new_platform

@@ -9,6 +9,6 @@
         "id":"1JZxUcu30BjxLwHg12bdHTxjDgsGFX9HA9zC4Jd8cuUM"
     },
     "duplicate_comment":false,
-    "conflict_strategy":"keep_new_local",
+    "conflict_strategy":"keep_new_platform",
     "delay":0
 }
