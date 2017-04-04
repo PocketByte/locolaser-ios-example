@@ -1,5 +1,8 @@
 {
-    "platform":"ios",
+    "platform": {
+        "type":"ios",
+        "swift_class":"Str"
+    },
     "source": {
         "type":"googlesheet", 
         "column_key":"key",

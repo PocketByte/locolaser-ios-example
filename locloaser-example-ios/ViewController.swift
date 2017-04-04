@@ -15,10 +15,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.labelPlural1.text = String.localizedStringWithFormat("screen_main_plural_string".localized, 25)
-        self.labelPlural2.text = String.localizedStringWithFormat("screen_main_plural_string".localized, 1)
-        self.labelPlural3.text = String.localizedStringWithFormat("screen_main_plural_string".localized, 0)
-        self.labelPlural4.text = String.localizedStringWithFormat("screen_main_plural_string".localized, 32)
+        self.labelPlural1.text = String.localizedStringWithFormat(Str.screen_main_plural_string, 25)
+        self.labelPlural2.text = String.localizedStringWithFormat(Str.screen_main_plural_string, 1)
+        self.labelPlural3.text = String.localizedStringWithFormat(Str.screen_main_plural_string, 0)
+        self.labelPlural4.text = String.localizedStringWithFormat(Str.screen_main_plural_string, 32)
         
     }
 }
