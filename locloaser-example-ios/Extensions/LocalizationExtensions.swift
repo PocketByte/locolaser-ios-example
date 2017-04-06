@@ -8,7 +8,7 @@ import UIKit
 
 open class LocalizationExtensions {
     
-    open static let MISSING_TRANSLATION_NOTIFICATION = "LocalizationExtensions.missing_translation";
+    open static let notificationMissingTransalation = "LocalizationExtensions.missingTranslation";
     
     fileprivate static var bundles : [Bundle] = []
     
@@ -34,7 +34,7 @@ extension String {
             return string
         }
         
-        NotificationCenter.default.post(name: Notification.Name(rawValue: LocalizationExtensions.MISSING_TRANSLATION_NOTIFICATION), object: self)
+        NotificationCenter.default.post(name: Notification.Name(rawValue: LocalizationExtensions.notificationMissingTransalation), object: self)
         
         return self
     }
