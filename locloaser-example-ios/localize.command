@@ -3,7 +3,7 @@
 
 GROUP="ru/pocketbyte/locolaser"
 ARTIFACT="locolaser-mobile-googlesheet"
-VERSION="1.1.0"
+VERSION="1.1.1"
 CONFIG_FILE="localization_config.json"
 
 cd "`dirname \"$0\"`"
