@@ -77,7 +77,7 @@ extension String {
 
 extension UILabel {
     
-    public var lzText : String? {
+    @IBInspectable public var lzText : String? {
         set {
             if newValue != nil {
                 self.text = newValue?.localized
@@ -95,7 +95,7 @@ extension UILabel {
 
 extension UITextField {
     
-    public var lzText : String? {
+    @IBInspectable public var lzText : String? {
         set {
             if newValue != nil {
                 self.text = newValue?.localized
@@ -110,7 +110,7 @@ extension UITextField {
         }
     }
     
-    public var lzPlaceholder : String? {
+    @IBInspectable public var lzPlaceholder : String? {
         set {
             if newValue != nil {
                 self.placeholder = newValue?.localized
@@ -128,37 +128,37 @@ extension UITextField {
 
 extension UIButton {
     
-    public var lzTitle : String? {
+    @IBInspectable public var lzTitle : String? {
         set { setLocalizedTitle(newValue, state: UIControlState()) }
         get { return getTitleForState(UIControlState()) }
     }
     
-    public var lzTitleHighlighted : String? {
+    @IBInspectable public var lzTitleHighlighted : String? {
         set { setLocalizedTitle(newValue, state: UIControlState.highlighted) }
         get { return getTitleForState(UIControlState.highlighted) }
     }
     
-    public var lzTitleDisabled : String? {
+    @IBInspectable public var lzTitleDisabled : String? {
         set { setLocalizedTitle(newValue, state: UIControlState.disabled) }
         get { return getTitleForState(UIControlState.disabled) }
     }
     
-    public var lzTitleSelected : String? {
+    @IBInspectable public var lzTitleSelected : String? {
         set { setLocalizedTitle(newValue, state: UIControlState.selected) }
         get { return getTitleForState(UIControlState.selected) }
     }
     
-    public var lzTitleFocused : String? {
+    @IBInspectable public var lzTitleFocused : String? {
         set { setLocalizedTitle(newValue, state: UIControlState.focused) }
         get { return getTitleForState(UIControlState.focused) }
     }
     
-    public var lzTitleApplication : String? {
+    @IBInspectable public var lzTitleApplication : String? {
         set { setLocalizedTitle(newValue, state: UIControlState.application) }
         get { return getTitleForState(UIControlState.application) }
     }
     
-    public var lzTitleReserved : String? {
+    @IBInspectable public var lzTitleReserved : String? {
         set { setLocalizedTitle(newValue, state: UIControlState.reserved) }
         get { return getTitleForState(UIControlState.reserved) }
     }
@@ -182,7 +182,7 @@ extension UIButton {
 
 extension UIBarItem {
     
-    public var lzTitle : String? {
+    @IBInspectable public var lzTitle : String? {
         set {
             if newValue != nil {
                 self.title = newValue?.localized
@@ -200,7 +200,7 @@ extension UIBarItem {
 
 extension UINavigationItem {
     
-    public var lzTitle : String? {
+    @IBInspectable public var lzTitle : String? {
         set {
             if newValue != nil {
                 self.title = newValue?.localized
@@ -215,7 +215,7 @@ extension UINavigationItem {
         }
     }
     
-    public var lzPrompt : String? {
+    @IBInspectable public var lzPrompt : String? {
         set {
             if newValue != nil {
                 self.prompt = newValue?.localized
@@ -233,7 +233,7 @@ extension UINavigationItem {
 
 extension UIViewController {
     
-    public var lzTitle : String? {
+    @IBInspectable public var lzTitle : String? {
         set {
             if newValue != nil {
                 self.title = newValue?.localized
