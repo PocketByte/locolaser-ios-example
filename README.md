@@ -12,7 +12,7 @@ Example has a special Bash scripts in folder `"./locloaser-example-ios/"`. You c
 You are able to choose which type of tool you will to use by setting a special variables in Bash scripts. There are 3 variables that respons to LocoLaser artifact:
 - **`GROUP`** - Group of artifact. Use slashes (`"/"`) instead of dots (`"."`). For example: `"ru/pocketbyte/locolaser"`;
 - **`ARTIFACT`** - Artifact Id. For Google Sheets use `"locolaser-mobile-googlesheet"`;
-- **`VERSION`** - Version of artifact. Latest version is "1.0.0".
+- **`VERSION`** - Version of artifact. Latest version is "1.1.1".
 
 Leave bash scripts without changes if you want to use latest artifact fo Google Sheets.
 
@@ -22,7 +22,7 @@ Place your `"localization_config.json"` in the folder with sources. In example i
 
 ##### 4 Step: Run localization
 All preparation are done. To run localization you should run coresponded bash script.
-<br> To run LocoLaser before each build you should add **Run Script** to your project. For example:
+<br> If you wish, you able to run LocoLaser before each build. To do it you should add **Run Script** to your project. For example:
 ``` Bash
 ./locloaser-example-ios/localize.command
 ```
