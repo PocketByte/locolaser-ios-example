@@ -5,11 +5,11 @@ LocoLaser - Localozation tool for Android and iOS. See https://github.com/Pocket
 ##### 1 Step: Add Bash script
 Example has a special Bash scripts in folder `"./locloaser-example-ios/"`. You can copy them without changes in your project in the folder with sources. There are 3 files:
 - **`localize.command`** - Run LocoLaser with default parameters;
-- **`localizeForce.command`** - Run LocoLaser with flag `--force`;
-- **`localizeExportNew.command`** - Run LocoLaser with flag `--force` and `conflict strategy = export_new_platform`.
+- **`localizeForce.command`** - Run LocoLaser with flag `--force` (depends on `localize.command`);
+- **`localizeExportNew.command`** - Run LocoLaser with flag `--force` and `conflict strategy = export_new_platform` (depends on `localize.command`).
 
 ##### 2 Step: Choose artifact
-You are able to choose which type of tool you will to use by setting a special variables in `localize.command`. There are `ARTIFACTS` variable that respons to LocoLaser artifact. For Mobile platform and Google Sheets source use following artifacts:
+You are able to choose which type of tool you will to use by setting a special variables in `localize.command`. There are `ARTIFACTS` variable that respons to LocoLaser artifacts. For Mobile platform and Google Sheets source use following artifacts:
 - **`ru.pocketbyte.locolaser:core:1.2.1`** - Mandatory artifact that contains common LocoLaser logic;
 - **`ru.pocketbyte.locolaser:platform-mobile:1.2.1`** - Artifact that has logic of how to work with mobile platform configuration;
 - **`ru.pocketbyte.locolaser:source-googlesheet:1.2.1`** - Artifact that has logic of how to work with Google Sheets source configuration.
@@ -17,7 +17,7 @@ You are able to choose which type of tool you will to use by setting a special v
 Leave bash scripts without changes if you want to use Google Sheets as a source in your XCode project.
 
 ##### 3 Step: Add LocoLaser config
-Place your `"localization_config.json"` in the folder with sources. In example it's `"./locloaser-example-ios/"`. You can read more about config file content in the following repository: https://github.com/PocketByte/LocoLaser/.
+Place your `"localization_config.json"` into folder with sources. In example it's `"./locloaser-example-ios/"`. You can read more about config file content in the following repository: https://github.com/PocketByte/LocoLaser/.
 <br>You can change name and location of config file by changing variable **`CONFIG_FILE`** in `localize.command`.
 
 ##### 4 Step: Run localization
