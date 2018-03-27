@@ -9,16 +9,16 @@ Example has a special Bash scripts in folder `"./locloaser-example-ios/"`. You c
 - **`localizeExportNew.command`** - Run LocoLaser with flag `--force` and `conflict strategy = export_new_platform`.
 
 ##### 2 Step: Choose artifact
-You are able to choose which type of tool you will to use by setting a special variables in Bash scripts. There are 3 variables that respons to LocoLaser artifact:
-- **`GROUP`** - Group of artifact. Use slashes (`"/"`) instead of dots (`"."`). For example: `"ru/pocketbyte/locolaser"`;
-- **`ARTIFACT`** - Artifact Id. For Google Sheets use `"locolaser-mobile-googlesheet"`;
-- **`VERSION`** - Version of artifact. Latest version is "1.1.1".
+You are able to choose which type of tool you will to use by setting a special variables in `localize.command`. There are `ARTIFACTS` variable that respons to LocoLaser artifact. For Mobile platform and Google Sheets source use following artifacts:
+- **`ru.pocketbyte.locolaser:core:1.2.1`** - Mandatory artifact that contains common LocoLaser logic;
+- **`ru.pocketbyte.locolaser:platform-mobile:1.2.1`** - Artifact that has logic of how to work with mobile platform configuration;
+- **`ru.pocketbyte.locolaser:source-googlesheet:1.2.1`** - Artifact that has logic of how to work with Google Sheets source configuration.
 
-Leave bash scripts without changes if you want to use latest artifact fo Google Sheets.
+Leave bash scripts without changes if you want to use Google Sheets as a source in your XCode project.
 
 ##### 3 Step: Add LocoLaser config
 Place your `"localization_config.json"` in the folder with sources. In example it's `"./locloaser-example-ios/"`. You can read more about config file content in the following repository: https://github.com/PocketByte/LocoLaser/.
-<br>You can change name and location of config file by changing variable **`CONFIG_FILE`** in bash scripts.
+<br>You can change name and location of config file by changing variable **`CONFIG_FILE`** in `localize.command`.
 
 ##### 4 Step: Run localization
 All preparation are done. To run localization you should run coresponded bash script.
