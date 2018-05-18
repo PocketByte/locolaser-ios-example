@@ -48,7 +48,7 @@ mkdir -p $ARTIFACTS_DIR/
 SCRIPT_DATE="$TEMP_DIR/script_date"
 if [ -f $SCRIPT_DATE ]
 then
-    SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
+    SCRIPTPATH="${0}"
     if [ $SCRIPTPATH -nt $SCRIPT_DATE ]
     then
         echo "Script modified. Remove artifacts."
