@@ -2,9 +2,9 @@
 # Licensed under the Apache License, Version 2.0
 
 ARTIFACTS=(
-        "ru.pocketbyte.locolaser:core:1.2.1"
-        "ru.pocketbyte.locolaser:platform-mobile:1.2.1"
-        "ru.pocketbyte.locolaser:source-googlesheet:1.2.1"
+        "ru.pocketbyte.locolaser:core:1.2.4"
+        "ru.pocketbyte.locolaser:platform-mobile:1.2.4"
+        "ru.pocketbyte.locolaser:source-googlesheet:1.2.4"
     )
 CONFIG_FILE="localization_config.json"
 

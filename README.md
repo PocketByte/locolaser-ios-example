@@ -10,9 +10,9 @@ Example has a special Bash scripts in folder `"./locloaser-example-ios/"`. You c
 
 ##### 2 Step: Choose artifact
 You are able to choose which type of tool you will to use by setting a special variables in `localize.command`. There are `ARTIFACTS` variable that respons to LocoLaser artifacts. For Mobile platform and Google Sheets source use following artifacts:
-- **`ru.pocketbyte.locolaser:core:1.2.1`** - Mandatory artifact that contains common LocoLaser logic;
-- **`ru.pocketbyte.locolaser:platform-mobile:1.2.1`** - Artifact that has logic of how to work with mobile platform configuration;
-- **`ru.pocketbyte.locolaser:source-googlesheet:1.2.1`** - Artifact that has logic of how to work with Google Sheets source configuration.
+- **`ru.pocketbyte.locolaser:core:1.2.4`** - Mandatory artifact that contains common LocoLaser logic;
+- **`ru.pocketbyte.locolaser:platform-mobile:1.2.4`** - Artifact that has logic of how to work with mobile platform configuration;
+- **`ru.pocketbyte.locolaser:source-googlesheet:1.2.4`** - Artifact that has logic of how to work with Google Sheets source configuration.
 
 Leave bash scripts without changes if you want to use Google Sheets as a source in your XCode project.
 
