@@ -8,11 +8,11 @@ import UIKit
 
 open class LocalizationExtensions {
     
-    open static let notificationMissingTransalation = "LocalizationExtensions.missingTranslation";
+    public static let notificationMissingTransalation = "LocalizationExtensions.missingTranslation";
     
     fileprivate static var bundles : [Bundle] = []
     
-    open static func addBundle(_ bundle: Bundle) {
+    public static func addBundle(_ bundle: Bundle) {
         if !bundles.contains(bundle) && bundle != Bundle.main {
             bundles.append(bundle)
         }
@@ -129,41 +129,41 @@ extension UITextField {
 extension UIButton {
     
     @IBInspectable public var lzTitle : String? {
-        set { setLocalizedTitle(newValue, state: UIControlState()) }
-        get { return getTitleForState(UIControlState()) }
+        set { setLocalizedTitle(newValue, state: UIControl.State()) }
+        get { return getTitleForState(UIControl.State()) }
     }
     
     @IBInspectable public var lzTitleHighlighted : String? {
-        set { setLocalizedTitle(newValue, state: UIControlState.highlighted) }
-        get { return getTitleForState(UIControlState.highlighted) }
+        set { setLocalizedTitle(newValue, state: UIControl.State.highlighted) }
+        get { return getTitleForState(UIControl.State.highlighted) }
     }
     
     @IBInspectable public var lzTitleDisabled : String? {
-        set { setLocalizedTitle(newValue, state: UIControlState.disabled) }
-        get { return getTitleForState(UIControlState.disabled) }
+        set { setLocalizedTitle(newValue, state: UIControl.State.disabled) }
+        get { return getTitleForState(UIControl.State.disabled) }
     }
     
     @IBInspectable public var lzTitleSelected : String? {
-        set { setLocalizedTitle(newValue, state: UIControlState.selected) }
-        get { return getTitleForState(UIControlState.selected) }
+        set { setLocalizedTitle(newValue, state: UIControl.State.selected) }
+        get { return getTitleForState(UIControl.State.selected) }
     }
     
     @IBInspectable public var lzTitleFocused : String? {
-        set { setLocalizedTitle(newValue, state: UIControlState.focused) }
-        get { return getTitleForState(UIControlState.focused) }
+        set { setLocalizedTitle(newValue, state: UIControl.State.focused) }
+        get { return getTitleForState(UIControl.State.focused) }
     }
     
     @IBInspectable public var lzTitleApplication : String? {
-        set { setLocalizedTitle(newValue, state: UIControlState.application) }
-        get { return getTitleForState(UIControlState.application) }
+        set { setLocalizedTitle(newValue, state: UIControl.State.application) }
+        get { return getTitleForState(UIControl.State.application) }
     }
     
     @IBInspectable public var lzTitleReserved : String? {
-        set { setLocalizedTitle(newValue, state: UIControlState.reserved) }
-        get { return getTitleForState(UIControlState.reserved) }
+        set { setLocalizedTitle(newValue, state: UIControl.State.reserved) }
+        get { return getTitleForState(UIControl.State.reserved) }
     }
     
-    fileprivate func setLocalizedTitle(_ title:String?, state: UIControlState) {
+    fileprivate func setLocalizedTitle(_ title:String?, state: UIControl.State) {
         if title != nil {
             self.setTitle(title!.localized, for: state)
         }
@@ -172,7 +172,7 @@ extension UIButton {
         }
     }
     
-    fileprivate func getTitleForState(_ state: UIControlState) -> String?{
+    fileprivate func getTitleForState(_ state: UIControl.State) -> String?{
         if let title = self.titleLabel {
             return title.text
         }
