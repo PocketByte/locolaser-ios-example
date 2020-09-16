@@ -15,14 +15,14 @@
             <string>NSStringPluralRuleType</string>
             <key>NSStringFormatValueTypeKey</key>
             <string>d</string>
-            <key>other</key>
-            <string>Other: %d значений</string>
-            <key>one</key>
-            <string>One: %d значение</string>
             <key>zero</key>
             <string>Zero: нет значений</string>
             <key>two</key>
             <string>Two: %d значения</string>
+            <key>other</key>
+            <string>Other: %d значений</string>
+            <key>one</key>
+            <string>One: %d значение</string>
             <key>few</key>
             <string>Few: %d значений</string>
         </dict>

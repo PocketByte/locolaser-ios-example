@@ -20,6 +20,7 @@
 		8B778A041E3A2E2100C2FB58 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 8B778A011E3A2E2100C2FB58 /* Localizable.stringsdict */; };
 		8BBB580F1E6D5347004A3CE9 /* localizeExportNew.command in Resources */ = {isa = PBXBuildFile; fileRef = 8BBB580E1E6D5347004A3CE9 /* localizeExportNew.command */; };
 		8BD645091E8E94560065EB4D /* Str.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB589F1E6ECEE8004A3CE9 /* Str.swift */; };
+		C8E39B59251266A800554823 /* service_account.json in Resources */ = {isa = PBXBuildFile; fileRef = C8E39B58251266A800554823 /* service_account.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		8B778A091E3A2EF200C2FB58 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = ru; path = ru.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		8BBB580E1E6D5347004A3CE9 /* localizeExportNew.command */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = localizeExportNew.command; sourceTree = "<group>"; };
 		8BBB589F1E6ECEE8004A3CE9 /* Str.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Str.swift; sourceTree = "<group>"; };
+		C8E39B58251266A800554823 /* service_account.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = service_account.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				8B7789FF1E3A2E2100C2FB58 /* Localizable.strings */,
 				8B778A011E3A2E2100C2FB58 /* Localizable.stringsdict */,
 				8B7789F71E3A2D8700C2FB58 /* localization_config.json */,
+				C8E39B58251266A800554823 /* service_account.json */,
 				8B7789F81E3A2D8700C2FB58 /* localize.command */,
 				8B7789F91E3A2D8700C2FB58 /* localizeForce.command */,
 				8BBB580E1E6D5347004A3CE9 /* localizeExportNew.command */,
@@ -174,6 +177,7 @@
 				8B7789ED1E3A297700C2FB58 /* LaunchScreen.storyboard in Resources */,
 				8B7789EA1E3A297700C2FB58 /* Assets.xcassets in Resources */,
 				8B778A041E3A2E2100C2FB58 /* Localizable.stringsdict in Resources */,
+				C8E39B59251266A800554823 /* service_account.json in Resources */,
 				8B7789FB1E3A2D8700C2FB58 /* localization_config.json in Resources */,
 				8B7789FC1E3A2D8700C2FB58 /* localize.command in Resources */,
 				8B7789FD1E3A2D8700C2FB58 /* localizeForce.command in Resources */,
@@ -197,7 +201,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "./locloaser-example-ios/localize.command";
+			shellScript = "./locloaser-example-ios/localize.command\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

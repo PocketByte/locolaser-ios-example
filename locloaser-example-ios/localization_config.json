@@ -6,11 +6,12 @@
     "source": {
         "type":"googlesheet", 
         "column_key":"key",
-        "column_locales":["base", "ru"],
         "column_comment":"base",
         "column_quantity":"quantity",
-        "id":"1JZxUcu30BjxLwHg12bdHTxjDgsGFX9HA9zC4Jd8cuUM"
+        "id":"1JZxUcu30BjxLwHg12bdHTxjDgsGFX9HA9zC4Jd8cuUM",
+        "credential_file": "service_account.json"
     },
+    "locales":["base", "ru"],
     "duplicate_comment":false,
     "conflict_strategy":"keep_new_platform",
     "delay":0
