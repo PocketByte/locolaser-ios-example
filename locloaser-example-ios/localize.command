@@ -12,7 +12,7 @@ TEMP_DIR="../DerivedData/LocoLaserTemp"
 ARTIFACTS_DIR="$TEMP_DIR/artifacts"
 REPOSITORY="https://bintray.com/pocketbyte/maven"
 
-function loadArtifact() {
+function artifactFile() {
     local ARTIFACT=$1
 
     local artifact_parts=(${ARTIFACT//:/ })
@@ -20,15 +20,26 @@ function loadArtifact() {
     local GROUP=${artifact_parts[0]}
     local NAME=${artifact_parts[1]}
     local VERSION=${artifact_parts[2]}
+    
+    echo "$ARTIFACTS_DIR/$NAME-$VERSION.jar"
+}
 
-    local GROUP_PATH=${GROUP//[.]//}
-
-    local ARTIFACT_FILE="$ARTIFACTS_DIR/$NAME.jar"
+function loadArtifact() {
+    local ARTIFACT=$1
+    local ARTIFACT_FILE=$( artifactFile $ARTIFACT )
 
     if [ -f $ARTIFACT_FILE ]
     then
         echo "Artifact $ARTIFACT already downloaded"
     else
+        local artifact_parts=(${ARTIFACT//:/ })
+
+        local GROUP=${artifact_parts[0]}
+        local NAME=${artifact_parts[1]}
+        local VERSION=${artifact_parts[2]}
+
+        local GROUP_PATH=${GROUP//[.]//}
+    
         ARTIFACT_URL="$REPOSITORY/download_file?file_path=$GROUP_PATH/$NAME/$VERSION/$NAME-$VERSION.jar"
         echo "Loading: $ARTIFACT_URL"
         curl -L -o $ARTIFACT_FILE $ARTIFACT_URL
@@ -64,7 +75,12 @@ do
 done
 
 # Run jar's
-jar_files=($ARTIFACTS_DIR/*.jar)
+jar_files=()
+for artifact in ${ARTIFACTS[*]}
+do
+    jar_files+=( $( artifactFile $artifact ) )
+done
+
 jar_files_str=$( IFS=$':'; echo "${jar_files[*]}" )
 
 java -cp $jar_files_str ru.pocketbyte.locolaser.Main $CONFIG_FILE $1
