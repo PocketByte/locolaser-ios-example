@@ -2,6 +2,9 @@
 LocoLaser - Localozation tool for Android and iOS. See https://github.com/PocketByte/LocoLaser/ for more details.
 <br>This example project shows how to use localization in iOS.
 
+### Migration from JCenter to Maven Central
+To migrate to Maven Central reposytory replace file `localize.command` in your project with a new one from current repository.
+
 ##### 1 Step: Add Bash script
 Example has a special Bash scripts in folder `"./locloaser-example-ios/"`. You can copy them without changes in your project in the folder with sources. There are 3 files:
 - **`localize.command`** - Run LocoLaser with default parameters;

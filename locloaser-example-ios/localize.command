@@ -10,7 +10,7 @@ CONFIG_FILE="localization_config.json"
 
 TEMP_DIR="../DerivedData/LocoLaserTemp"
 ARTIFACTS_DIR="$TEMP_DIR/artifacts"
-REPOSITORY="https://bintray.com/pocketbyte/maven"
+REPOSITORY="https://repo1.maven.org/maven2"
 
 function artifactFile() {
     local ARTIFACT=$1
@@ -40,7 +40,7 @@ function loadArtifact() {
 
         local GROUP_PATH=${GROUP//[.]//}
     
-        ARTIFACT_URL="$REPOSITORY/download_file?file_path=$GROUP_PATH/$NAME/$VERSION/$NAME-$VERSION.jar"
+        ARTIFACT_URL="$REPOSITORY/$GROUP_PATH/$NAME/$VERSION/$NAME-$VERSION.jar"
         echo "Loading: $ARTIFACT_URL"
         curl -L -o $ARTIFACT_FILE $ARTIFACT_URL
         if [ $? -eq 0 ]
