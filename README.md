@@ -3,8 +3,10 @@ LocoLaser - Localozation tool for Android and iOS. See https://github.com/Pocket
 <br>This example project shows how to use localization in iOS.
 
 ### Migration from JCenter to Maven Central
-To migrate to Maven Central reposytory replace file `localize.command` in your project with a new one from current repository.
+To migrate to Maven Central reposytory replace file `localize.command` in your project with a new one from current repository.  
+Or you may do the same changes as in the folliwing commit https://github.com/PocketByte/locolaser-ios-example/commit/765c50f69a928b696e274011aaf5620bf9ac298a .
 
+### Usage
 ##### 1 Step: Add Bash script
 Example has a special Bash scripts in folder `"./locloaser-example-ios/"`. You can copy them without changes in your project in the folder with sources. There are 3 files:
 - **`localize.command`** - Run LocoLaser with default parameters;
@@ -13,9 +15,9 @@ Example has a special Bash scripts in folder `"./locloaser-example-ios/"`. You c
 
 ##### 2 Step: Choose artifact
 You are able to choose which type of tool you will to use by setting a special variables in `localize.command`. There are `ARTIFACTS` variable that respons to LocoLaser artifacts. For Mobile platform and Google Sheets source use following artifacts:
-- **`ru.pocketbyte.locolaser:core:2.0.0`** - Mandatory artifact that contains common LocoLaser logic;
-- **`ru.pocketbyte.locolaser:resource-mobile:2.0.0`** - Artifact that has logic of how to work with mobile platform configuration;
-- **`ru.pocketbyte.locolaser:resource-googlesheet:2.0.0`** - Artifact that has logic of how to work with Google Sheets source configuration.
+- **`ru.pocketbyte.locolaser:core:2.1.0`** - Mandatory artifact that contains common LocoLaser logic;
+- **`ru.pocketbyte.locolaser:resource-mobile:2.1.0`** - Artifact that has logic of how to work with mobile platform configuration;
+- **`ru.pocketbyte.locolaser:resource-googlesheet:2.1.0`** - Artifact that has logic of how to work with Google Sheets source configuration.
 
 Leave bash scripts without changes if you want to use Google Sheets as a source in your XCode project.
 
