@@ -4,7 +4,7 @@ LocoLaser - Localozation tool for Android and iOS. See https://github.com/Pocket
 
 ### Migration from JCenter to Maven Central
 To migrate to Maven Central reposytory replace file `localize.command` in your project with a new one from current repository.  
-Or you may do the same changes as in the folliwing commit https://github.com/PocketByte/locolaser-ios-example/commit/765c50f69a928b696e274011aaf5620bf9ac298a .
+Or you may do the same changes as in the folliwing commit [765c50f69a928b696e274011aaf5620bf9ac298a](https://github.com/PocketByte/locolaser-ios-example/commit/765c50f69a928b696e274011aaf5620bf9ac298a).
 
 ### Usage
 ##### 1 Step: Add Bash script
